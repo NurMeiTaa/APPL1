@@ -55,4 +55,24 @@ public class Sorting
             list[position] = key;
         }
     }
+
+    static void selectionSort(int inlist[]) {
+        int n = inlist.length;
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < n-1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (inlist[j] < inlist[min_idx])
+                    min_idx = j;
+ 
+            // Swap the found minimum element with the first
+            // element
+            int temp = inlist[min_idx];
+            inlist[min_idx] = inlist[i];
+            inlist[i] = temp;
+        }
+    //source: geeksforgeeks (https://www.geeksforgeeks.org/java-program-for-selection-sort/)
+    }
 }
