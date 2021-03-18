@@ -51,7 +51,17 @@ public class Salesperson implements Comparable
     //--------------------------------------------------
     public int compareTo(Object other)
     {
-        int result = 0;
+        int result;
+        Salesperson sp = (Salesperson)other;
+        if(this.totalSales > sp.totalSales)
+            result = 1;
+        else if(this.totalSales < sp.totalSales)
+            result = -1;
+        else
+            if(this.firstName.compareTo(sp.firstName)==0)
+                result = this.lastName.compareTo(sp.lastName);
+        else
+                result = this.firstName.compareTo(sp.firstName);
         return result;
     }
     //-------------------------
