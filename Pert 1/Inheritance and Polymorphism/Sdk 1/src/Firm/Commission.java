@@ -13,7 +13,8 @@ package Firm;
 public class Commission extends Hourly{
     private double totalSales;
     private final double commissionRate;
-    public Commission(String eName, String eAddress, String ePhone, String socSecNumber, double rate, double commissionRate) {
+    public Commission(String eName, String eAddress, String ePhone, String 
+            socSecNumber, double rate, double commissionRate) {
         super(eName, eAddress, ePhone, socSecNumber, commissionRate);
         this.commissionRate = commissionRate;
         totalSales = 0;
