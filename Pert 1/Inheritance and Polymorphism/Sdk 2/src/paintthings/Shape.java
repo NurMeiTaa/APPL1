@@ -19,7 +19,7 @@ abstract public class Shape
     abstract public double getArea();
     @Override
     public String toString(){
-        return "Shape Name : " + shapeName;
+        return shapeName;
     }
 }
 
