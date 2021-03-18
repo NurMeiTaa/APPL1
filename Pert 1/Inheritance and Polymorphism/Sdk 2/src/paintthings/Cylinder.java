@@ -23,7 +23,7 @@ public class Cylinder extends Shape {
     @Override
     public double getArea(){
         return (2*Math.PI*radius*radius) + 
-                (2*Math.PI*radius*height;
+                (2*Math.PI*radius*height);
     }
     
     @Override
