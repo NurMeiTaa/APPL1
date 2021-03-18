@@ -51,7 +51,7 @@ public class Salesperson implements Comparable
     //--------------------------------------------------
     public int compareTo(Object other)
     {
-        int result;
+        int result = 0;
         return result;
     }
     //-------------------------
