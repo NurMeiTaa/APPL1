@@ -26,14 +26,14 @@ public class Strings
         String[] strList;
         int size;
         Scanner scan = new Scanner(System.in);
-        System.out.print ("\nHow many integers do you want to sort? ");
+        System.out.print ("\nHow many words do you want to sort? ");
         size = scan.nextInt()+1;
         strList = new String[size];
-        System.out.println ("\nEnter the numbers...");
+        System.out.println ("\nEnter the words...");
         for (int i = 0; i < size; i++)
             strList[i] = scan.nextLine();
         Sorting.insertionSort(strList);
-        System.out.println ("\nYour numbers in sorted order...");
+        System.out.println ("\nYour words in sorted order...");
         for (int i = 0; i < size; i++)
             System.out.print(strList[i] + " ");
         System.out.println ();

@@ -26,19 +26,20 @@ public class WeeklySales
         int size;
         
         Scanner scan = new Scanner(System.in);
-        System.out.print("\nHow many salesperson do you want to input?");
+        System.out.print("\nHow many salesperson do you want to input? ");
         size = scan.nextInt();
         salesStaff = new Salesperson[size];
         firstName = new String[size];
         lastName = new String[size];
-        System.out.print("\nEnter the salesperson data: ");
+        System.out.print("\nEnter the salesperson data: \n");
         for (int i = 0; i<size; i++){
-            System.out.print("\nFirst Name: ");
+            System.out.print("First Name: ");
             firstName[i] = scan.next();
-            System.out.print("\nLast Name: ");
+            System.out.print("Last Name: ");
             lastName[i] = scan.next();
-            System.out.print("\nTotal Sales this week: ");
+            System.out.print("Total Sales this week: ");
             salesAmt = scan.nextInt();
+            System.out.print("\n");
             salesStaff[i] = new Salesperson(firstName[i],lastName[i],salesAmt);
         }
         Sorting.insertionSort(salesStaff);
