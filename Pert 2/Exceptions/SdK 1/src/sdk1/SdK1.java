@@ -1,5 +1,5 @@
 //Author: Shinta Nurkaafi
-package sdk.pkg1;
+package sdk1;
 import java.util.Scanner;
 
 public class SdK1 {
