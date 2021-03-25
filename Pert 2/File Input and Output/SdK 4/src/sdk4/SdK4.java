@@ -8,7 +8,7 @@ public class SdK4 {
     public static void main(String[] args) {
         String filename;
         do{
-            System.out.print("Name of file is: ");
+            System.out.print("Location of file: ");
             Scanner filenameScan = new Scanner(System.in);
             filename = filenameScan.nextLine();
             try{
