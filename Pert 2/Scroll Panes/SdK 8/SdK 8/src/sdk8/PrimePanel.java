@@ -8,6 +8,7 @@ public class PrimePanel extends JPanel{
     private JTextField number;
     private JButton computeButton;
     private JTextArea primeList;
+    private JScrollPane primeScroll;
 
     public PrimePanel (){
         JLabel heading = new JLabel ("Prime Number Listing");
@@ -17,7 +18,8 @@ public class PrimePanel extends JPanel{
         number = new JTextField (8);
         computeButton = new JButton ("Click to see all primes up to your number!");
         primeList = new JTextArea (10, 30);
-
+        primeScroll = new JScrollPane(primeList);
+        primeScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         computeButton.addActionListener(new ButtonListener());
 
         // Add the components to the panel
@@ -25,10 +27,11 @@ public class PrimePanel extends JPanel{
         add (inputLabel);
         add (number);
         add (computeButton);
-        add (primeList);
+        //add (primeList);
+        add (primeScroll);
 
         setPreferredSize (new Dimension (400, 320));
-        setBackground (Color.yellow);
+        setBackground (Color.pink);
     }
     
     public class ButtonListener implements ActionListener {
